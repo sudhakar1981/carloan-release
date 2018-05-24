@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.citibank.com</groupId>
+  <artifactId>carloan</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>carloan Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+
+	<distributionManagement>
+    <repository>
+        <id>my-repo</id>
+        <name>Sudhakar-releases</name>
+        <url>http://localhost:8081/artifactory/my-repo</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+    </repository>
+    <snapshotRepository>
+        <id>my-repo</id>
+        <name>Sudhakar-snapshots</name>
+        <url>http://localhost:8081/artifactory/my-repo</url>
+		<releases>
+			<enabled>false</enabled>
+		</releases>
+    </snapshotRepository>
+</distributionManagement>
+
+
+<scm>
+	<developerConnection>scm:git:https://sudhakar1981:sarala123@github.com/sudhakar1981/artifactory.git</developerConnection>
+	<tag>carloan-1.0</tag>
+</scm>
+</project>
